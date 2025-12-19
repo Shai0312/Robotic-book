@@ -1,0 +1,419 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* Modern color scheme for robotics education */
+:root {
+  --ifm-color-primary: #1a73e8; /* Modern blue */
+  --ifm-color-primary-dark: #1865cc;
+  --ifm-color-primary-darker: #1658b3;
+  --ifm-color-primary-darkest: #124792;
+  --ifm-color-primary-light: #3b8cff;
+  --ifm-color-primary-lighter: #5a9dff;
+  --ifm-color-primary-lightest: #79b0ff;
+  --ifm-color-secondary: #34a853; /* Google green */
+  --ifm-color-warning: #fbbc05; /* Google yellow */
+  --ifm-color-danger: #ea4335; /* Google red */
+  --ifm-color-info: #4285f4; /* Google blue */
+
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(255, 229, 100, 0.2);
+
+  /* Card and shadow enhancements */
+  --ifm-card-background-color: #ffffff;
+  --ifm-card-border-radius: 12px;
+  --ifm-card-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  /* Spacing improvements */
+  --ifm-spacing-horizontal: 1.5rem;
+  --ifm-spacing-horizontal-lg: 2rem;
+
+  /* Font enhancements */
+  --ifm-font-family-base: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif;
+}
+
+/* Modern dark mode palette */
+[data-theme='dark'] {
+  --ifm-color-primary: #8ab4f8;
+  --ifm-color-primary-dark: #6a9ef5;
+  --ifm-color-primary-darker: #528cf3;
+  --ifm-color-primary-darkest: #3070e6;
+  --ifm-color-primary-light: #a6c7fb;
+  --ifm-color-primary-lighter: #bcd6fc;
+  --ifm-color-primary-lightest: #e6eefc;
+  --ifm-color-secondary: #5bb974;
+  --ifm-color-warning: #f9ab2d;
+  --ifm-color-danger: #f25c5c;
+  --ifm-color-info: #6ab8f7;
+
+  --docusaurus-highlighted-code-line-bg: rgba(115, 115, 115, 0.3);
+  --ifm-card-background-color: #1e1e1e;
+  --ifm-card-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Enhanced typography */
+.docusaurus-highlight-code-line {
+  background-color: rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+}
+
+[data-theme='dark'] .docusaurus-highlight-code-line {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Modern card styling for documentation pages */
+.card {
+  border: none;
+  box-shadow: var(--ifm-card-shadow);
+  transition: all 0.3s ease;
+  border-radius: var(--ifm-card-border-radius);
+  background-color: var(--ifm-card-background-color);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Enhanced navigation */
+.navbar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+/* Improved sidebar styling */
+.menu {
+  padding: 1rem 0.5rem;
+}
+
+.menu__list {
+  margin: 0;
+}
+
+.menu__link {
+  border-radius: 8px;
+  margin: 2px 0;
+  padding: 8px 16px;
+}
+
+.menu__link:hover {
+  background-color: rgba(26, 115, 232, 0.1);
+}
+
+.menu__link--active:not(.menu__link--sublist) {
+  background-color: rgba(26, 115, 232, 0.15);
+  font-weight: 600;
+}
+
+/* Enhanced code blocks */
+.prism-code {
+  border-radius: 8px;
+  font-size: 0.9rem;
+  padding: 1rem;
+  line-height: 1.5;
+}
+
+/* Modern button styling */
+.button {
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Enhanced table styling */
+.table-of-contents__link {
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.table-of-contents__link--active {
+  background-color: rgba(26, 115, 232, 0.1);
+  font-weight: 600;
+}
+
+/* Modern link styling */
+.markdown a {
+  text-decoration: none;
+  position: relative;
+}
+
+.markdown a:hover {
+  text-decoration: underline;
+}
+
+/* Enhanced heading styling */
+.markdown h1,
+.markdown h2,
+.markdown h3,
+.markdown h4,
+.markdown h5,
+.markdown h6 {
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.markdown h1 {
+  border-bottom: 2px solid rgba(26, 115, 232, 0.2);
+  padding-bottom: 0.5rem;
+}
+
+/* Enhanced blockquote styling */
+.markdown blockquote {
+  border-left: 4px solid var(--ifm-color-primary);
+  background-color: rgba(26, 115, 232, 0.05);
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
+  border-radius: 0 8px 8px 0;
+}
+
+/* Enhanced admonitions */
+.admonition {
+  border-radius: 8px;
+  margin: 1.5rem 0;
+}
+
+.admonition--note {
+  border-color: var(--ifm-color-info);
+}
+
+.admonition--tip {
+  border-color: var(--ifm-color-secondary);
+}
+
+.admonition--caution {
+  border-color: var(--ifm-color-warning);
+}
+
+.admonition--danger {
+  border-color: var(--ifm-color-danger);
+}
+
+/* Homepage background enhancements */
+.main-wrapper {
+  background: #000000;
+  color: #ffffff;
+}
+
+[data-theme='dark'] .main-wrapper {
+  background: #000000;
+  color: #ffffff;
+}
+
+/* Homepage specific styling */
+.homepage {
+  background: #000000;
+  padding: 2rem 0;
+  color: #ffffff;
+}
+
+[data-theme='dark'] .homepage {
+  background: #000000;
+  color: #ffffff;
+}
+
+/* Hero section styling */
+.hero--primary {
+  background: #000000; /* Black background */
+}
+
+[data-theme='dark'] .hero--primary {
+  background: #000000; /* Black background */
+}
+
+/* Button styling */
+html {
+  background: #000000;
+}
+
+body {
+  background: #000000;
+  color: #ffffff;
+}
+
+/* General button styling */
+.button {
+  background: #007bff; /* Blue color */
+  border-color: #007bff;
+  color: white;
+}
+
+.button:hover {
+  background: #0056b3;
+  border-color: #004085;
+}
+
+/* Specific styling for the main header button */
+.hero__title, .hero__subtitle {
+  color: white;
+}
+
+.button--secondary {
+  color: white !important;
+}
+
+/* Footer styling */
+.footer {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+[data-theme='dark'] .footer {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+
+/* Module cards styling */
+.module-card {
+  background: #000000;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  height: 100%;
+  border: 1px solid #ffffff;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.module-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(255, 255, 255, 0.2);
+  border-color: #007bff;
+}
+
+[data-theme='dark'] .module-card {
+  background: #000000;
+  border: 1px solid #ffffff;
+}
+
+.module-card h3 {
+  color: #ffffff;
+  margin-bottom: 0.75rem;
+  font-size: 1.25rem;
+}
+
+.module-card p {
+  color: #cccccc;
+  margin-bottom: 1rem;
+  flex-grow: 1;
+}
+
+.module-card .card-button {
+  align-self: center;
+  margin-top: auto;
+  background: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff; /* White text for Read Documentation */
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.2s ease;
+  font-weight: 500;
+}
+
+.module-card .card-button:hover {
+  background: #ffffff;
+  color: #000000; /* Black text on hover for contrast */
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+}
+
+/* Footer enhancements */
+.footer {
+  background-color: var(--ifm-background-surface-color);
+  padding: 3rem 0 2rem 0;
+  margin-top: 4rem;
+}
+
+/* Responsive improvements */
+@media (max-width: 996px) {
+  .navbar {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+
+  .menu {
+    padding: 0.5rem;
+  }
+}
+
+/* Custom animation for interactive elements */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply animation to main content */
+.main-wrapper {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* Enhanced search bar if using search plugin */
+.navbar__search-input {
+  border-radius: 20px;
+  padding: 8px 16px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+}
+
+[data-theme='dark'] .navbar__search-input {
+  border: 1px solid var(--ifm-color-emphasis-500);
+  background-color: var(--ifm-background-color);
+}
+
+/* Custom styling for robotics-specific elements */
+.robotics-diagram {
+  background: linear-gradient(135deg, #f5f7fa 0%, #e4edf9 100%);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  border: 1px solid var(--ifm-color-emphasis-200);
+}
+
+[data-theme='dark'] .robotics-diagram {
+  background: linear-gradient(135deg, #2a2a2a 0%, #1a2332 100%);
+  border: 1px solid var(--ifm-color-emphasis-600);
+}
+
+/* Enhanced code tabs if using tabs plugin */
+.tabs-container {
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 1.5rem 0;
+}
+
+/* Better spacing for documentation sections */
+.doc-content {
+  max-width: 100%;
+}
+
+/* Custom styling for interactive elements */
+.interactive-element {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.interactive-element:hover {
+  transform: scale(1.02);
+}

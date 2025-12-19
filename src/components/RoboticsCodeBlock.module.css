@@ -1,0 +1,43 @@
+.roboticsCodeBlock {
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 1.5rem 0;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.codeHeader {
+  background-color: var(--ifm-color-emphasis-200);
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+[data-theme='dark'] .codeHeader {
+  background-color: var(--ifm-color-emphasis-600);
+}
+
+.codeTitle {
+  color: var(--ifm-color-primary);
+}
+
+.codeLanguage {
+  background-color: var(--ifm-color-secondary);
+  color: white;
+  padding: 0.1rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+}
+
+.codeContent {
+  padding: 1rem;
+  overflow-x: auto;
+}
+
+[data-theme='dark'] .roboticsCodeBlock {
+  border: 1px solid var(--ifm-color-emphasis-600);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}

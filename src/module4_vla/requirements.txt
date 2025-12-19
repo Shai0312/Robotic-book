@@ -1,0 +1,37 @@
+# Core dependencies for Vision-Language-Action (VLA) module
+
+# ROS 2 Python bindings (typically installed separately with ROS 2)
+rclpy>=3.0.0
+
+# OpenAI Whisper for speech recognition
+openai-whisper>=20230314
+
+# OpenAI API for cognitive planning
+openai>=1.0.0
+
+# Audio processing
+sounddevice>=0.4.6
+numpy>=1.21.0
+
+# Computer vision
+opencv-python>=4.8.0
+cv-bridge>=3.0.0
+
+# ROS message types (typically available in ROS 2 environment)
+std_msgs
+geometry_msgs
+sensor_msgs
+
+# Actionlib for ROS actions
+actionlib
+
+# JSON handling
+jsonschema>=4.0.0
+
+# Type hints
+typing-extensions>=4.0.0
+
+# For LLM integration
+tiktoken>=0.5.0
+langchain>=0.0.300
+langchain-openai>=0.0.5
