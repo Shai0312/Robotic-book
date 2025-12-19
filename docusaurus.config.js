@@ -11,9 +11,8 @@ const config = {
   url: 'https://cz-3.github.io', // Update this to your GitHub Pages URL
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub Pages, this is usually '/<repo-name>/'
-  baseUrl: '/',
-  onBrokenLinks: 'ignore',
-onBrokenMarkdownLinks: 'ignore',
+  baseUrl: '/Robotic/',
+// onBrokenLinks aur onBrokenMarkdownLinks ki lines hata do (ya comment kar do) kyunki ab zarurat nahi
 
   // GitHub pages deployment config.
   organizationName: 'cz-3', // Usually your GitHub org/user name.
