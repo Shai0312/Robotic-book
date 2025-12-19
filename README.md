@@ -6,9 +6,9 @@ Welcome to the ROS 2 Robot Control Module educational content! This comprehensiv
 
 This educational module covers three main areas:
 
-1. **ROS 2 Core Concepts**: Understanding nodes, topics, services, and messages
-2. **Python-ROS Integration**: Connecting Python-based AI agents to robot control systems
-3. **URDF Humanoid Modeling**: Modeling humanoid robots using Unified Robot Description Format
+1. **ROS 2 Core Concepts**: Understanding nodes, topics, services, and messages.
+2. **Python-ROS Integration**: Connecting Python-based AI agents to robot control systems.
+3. **URDF Humanoid Modeling**: Modeling humanoid robots using Unified Robot Description Format.
 
 ## Learning Objectives
 
