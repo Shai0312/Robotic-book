@@ -11,7 +11,7 @@ const config = {
   url: 'https://cz-3.github.io', // Update this to your GitHub Pages URL
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub Pages, this is usually '/<repo-name>/'
-  baseUrl: '/Robotic/',
+  baseUrl: '/',
 
   // GitHub pages deployment config.
   organizationName: 'cz-3', // Usually your GitHub org/user name.
