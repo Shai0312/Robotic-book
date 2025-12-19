@@ -19,7 +19,7 @@ const FeatureList: FeatureItem[] = [
         Learn ROS 2 Core Concepts including nodes, topics, services, and messages for building the foundation of robot control systems.
       </>
     ),
-    link: '/Robotic/docs/intro',
+    link: '/docs/intro',
   },
   {
     title: 'Module 2: The Digital Twin',
@@ -29,7 +29,7 @@ const FeatureList: FeatureItem[] = [
         Physical-based simulation with Gazebo, high-fidelity digital twins and Human-Robot Interaction using Unity, and sensor simulation (LIDAR, DEPTH CAMERA, IMU).
       </>
     ),
-    link: '/Robotic/docs/intro',
+    link: '/docs/intro',
   },
   {
     title: 'Module 3: The AI Robot Brain',
@@ -39,7 +39,7 @@ const FeatureList: FeatureItem[] = [
         Advanced AI concepts for robot decision-making, planning, and control using modern machine learning approaches.
       </>
     ),
-    link: '/Robotic/docs/intro',
+    link: '/docs/intro',
   },
   {
     title: 'Module 4: Vision-Language-Action (VLA)',
@@ -49,7 +49,7 @@ const FeatureList: FeatureItem[] = [
         Integration of perception, cognition, and action systems for autonomous humanoid robots using state-of-the-art AI techniques.
       </>
     ),
-    link: '/Robotic/docs/intro',
+    link: '/docs/intro',
   },
 ];
 

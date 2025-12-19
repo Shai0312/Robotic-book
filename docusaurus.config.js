@@ -8,11 +8,10 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://cz-3.github.io', // Update this to your GitHub Pages URL
+  url: 'https://your-vercel-project-name.vercel.app', // Vercel deployment URL
   // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub Pages, this is usually '/<repo-name>/'
-  baseUrl: '/Robotic/',
-// onBrokenLinks aur onBrokenMarkdownLinks ki lines hata do (ya comment kar do) kyunki ab zarurat nahi
+  // For Vercel deployment, use root path
+  baseUrl: '/',
 
   // GitHub pages deployment config.
   organizationName: 'cz-3', // Usually your GitHub org/user name.
