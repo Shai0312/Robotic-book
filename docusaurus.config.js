@@ -8,7 +8,7 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://your-vercel-project-name.vercel.app', // Vercel deployment URL
+  url: 'https://robotic-book-murex.vercel.app', // Vercel deployment URL
   // Set the /<baseUrl>/ pathname under which your site is served
   // For Vercel deployment, use root path
   baseUrl: '/',
