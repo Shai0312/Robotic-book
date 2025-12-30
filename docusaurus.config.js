@@ -62,6 +62,14 @@ const config = {
     },
   ],
 
+  scripts: [
+    {
+      src: '/js/chatbot-integration.js',
+      async: true,
+      defer: true,
+    },
+  ],
+
   themes: [
     // ... Your other themes
     // [
